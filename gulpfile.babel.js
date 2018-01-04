@@ -12,6 +12,7 @@ import fs            from 'fs';
 import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
+import ghPages       from 'gulp-gh-pages';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -34,6 +35,23 @@ gulp.task('build',
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
   gulp.series('build', server, watch));
+
+// Build & Deploy the "dist" folder by running all of the below tasks
+gulp.task('deploy',
+ gulp.series('build', copyDistfiles, githubDeploy ));
+
+
+// Deploy site
+function githubDeploy() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+};
+
+// Copy CNAME & .htacces
+function copyDistfiles() {
+  return gulp.src(['CNAME'])
+    .pipe(gulp.dest(PATHS.dist));
+}
 
 // Delete the "dist" folder
 // This happens every time a build starts
