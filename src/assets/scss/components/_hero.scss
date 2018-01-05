@@ -1,38 +1,83 @@
 .hero {
+    position: relative;
     background-color: $black;
     color:$white;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-
-    @include breakpoint(large) {
-        padding-top: 38vh;
-        padding-bottom: 10vh;
+    @include breakpoint(tablet) {
     }
+    @include breakpoint(xlarge) {
+    }
+}
+
+.hero__fig {
+    position: relative;
+    height:15rem;
+    width:100%;
+    @include breakpoint(tablet) {
+        height:25vw;
+    }
+    img {
+        width:100%;
+        height:100%;
+        display: block;
+        object-fit: cover;
+    }
+
 }
 
 .hero__inner {
     text-align: center;
+    //position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient( 135deg, rgba($primary-color,.75) 0, rgba(scale-color($primary-color, $lightness: -14%),.75) 50%, transparent);
+    background-color: #000;
+    background-color: $primary-color;
+    border-top: 1px solid scale-color($primary-color, $lightness: -14%);
+    border-bottom: 8px solid scale-color($primary-color, $lightness: -14%);
+    @include breakpoint(tablet) {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+    @include breakpoint(xlarge) {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
 }
 
 .hero__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0;
     line-height: 1;
     font-family: $body-font-family;
-    @include breakpoint(large) {
-        font-size: 4.5rem;
+    color:inherit;
+    @include breakpoint(tablet) {
+        font-size: 2.5rem;
+    }
+    @include breakpoint(xlarge) {
+        font-size: 4.25rem;
 
     }
 }
 
 .hero__lead {
-    font-size: 1.125rem;
+    font-size: 1rem;
     //font-weight: $global-weight-bold;
     font-family: $header-font-family;
     margin:.25em 0 .75em;
     line-height: 1.4;
-    @include breakpoint(large) {
-        font-size: 1.75rem;
+    @include breakpoint(tablet) {
+        font-size: 1rem;
+    }
+    @include breakpoint(xlarge) {
+        font-size: 1.5rem;
 
     }
+}
+
+.hero__action {
+    color:inherit;
 }
