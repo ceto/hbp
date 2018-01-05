@@ -20,6 +20,12 @@
     padding-bottom: 5vh;
   }
 }
+.ps--wide {
+  @include breakpoint(large) {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+}
 
 
 .ps--notop {
