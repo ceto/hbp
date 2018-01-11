@@ -37,14 +37,14 @@
         }
     }
     &:after {
-        //content:'';
+        content:'';
         display: block;
         position: absolute;
-        left:.75rem;
-        top:.75rem;
-        right:.75rem;
-        bottom:.75rem;
-        border: 1px solid rgba(#fff,.666);
+        left:.666rem;
+        top:.666rem;
+        right:.666rem;
+        bottom:.666rem;
+        border: 1px solid rgba(#fff,.5);
     }
 }
 
