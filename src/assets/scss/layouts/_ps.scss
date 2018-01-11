@@ -1,7 +1,15 @@
 .sitefooter {
   text-align: center;
+
   background-color: $primary-color;
+    background-image: url(../img/arabesc.svg);
+    background-repeat: repeat;
+    background-size: 3.5rem auto;
+    background-position: left top;
+    border-top: 2px solid scale-color($primary-color, $lightness: -14%);
+    border-bottom: 2px solid scale-color($primary-color, $lightness: -14%);
   color:$white;
+  text-shadow: 0 0 2px scale-color($primary-color, $lightness: -14%);
   padding-top:1.75rem;
   padding-bottom: 1rem;
   border-top: 1px solid scale-color($primary-color, $lightness: -14%);

@@ -16,7 +16,7 @@
         }
     }
     &:after {
-        content:'';
+        //content:'';
         display: block;
         position: absolute;
         left:.75rem;
@@ -29,13 +29,13 @@
 
 .illholder--left img {
     @include breakpoint(tablet) {
-        object-position: 100% 50%
+        object-position: 0 50%
     }
 }
 
 .illholder--right img {
     @include breakpoint(tablet) {
-        object-position: 0 50%
+        object-position: 100% 50%
     }
 }
 
