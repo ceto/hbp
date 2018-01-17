@@ -1,13 +1,16 @@
+.csection {
+  //border-top: 1px solid scale-color($light-gray, $lightness: -5%);
+}
 .sitefooter {
   text-align: center;
 
-  //background-color: $black;
-  //border-top: 2px solid scale-color($primary-color, $lightness: -14%);
+  background-color: $light-gray;
+  border-top: 1px solid scale-color($light-gray, $lightness: -5%);
   //border-bottom: 2px solid scale-color($primary-color, $lightness: -14%);
   //color:$white;
   //text-shadow: 0 0 2px scale-color($primary-color, $lightness: -14%);
-  padding-top:1.75rem;
-  padding-bottom: 1rem;
+  padding-top:2.75rem;
+  padding-bottom: 2rem;
 
   p {
     margin:0;
