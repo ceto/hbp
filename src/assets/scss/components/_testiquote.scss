@@ -1,0 +1,45 @@
+.testiquote {
+
+  position: relative;
+  font-size: .875rem;
+  //margin-left: 25%;
+  padding: 0 0;
+  border:none;
+  //text-align: center;
+
+  font-family: $header-font-family;
+}
+
+.testiquote img {
+  display: block;
+  width: 2.75rem !important;
+  margin:0 .5rem 0 0;
+  float:left;
+  //border-radius:50%;
+}
+
+.testiquote p {
+  &:first-letter() {
+    font-size: 3.7666em;
+    font-family: $body-font-family;
+    display: inline-block;
+    //font-weight: $global-weight-bold;
+    float:left;
+    line-height: 1;
+    margin-right: .0875em;
+    margin-top: -.1666em;
+    //font-variant: small-caps;
+  }
+}
+
+.testiquote cite {
+  line-height: 1.125;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: $global-weight-bold;
+  font-family: $body-font-family;
+  em {
+    font-size: .8em;
+    font-weight: $global-weight-normal;
+  }
+}
