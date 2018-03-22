@@ -80,9 +80,11 @@
 }
 .stylized--light {
     //font-size: 1.75rem;
+    margin-bottom: 0;
     color:$dark-gray;
     text-align: center;
     &:after {
+        display: none;
         margin:1em auto 1em;
     }
 }
