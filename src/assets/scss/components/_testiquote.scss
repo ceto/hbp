@@ -6,30 +6,29 @@
   padding: 0 0;
   border:none;
   //text-align: center;
+  margin-bottom: 3rem;
 
   font-family: $header-font-family;
 }
 
 .testiquote img {
   display: block;
-  width: 2.75rem !important;
-  margin:0 .5rem 0 0;
+  //background-color: $medium-gray;
+  box-shadow: 0 0 2px 0 rgba(#000,.25);
+  border:1px solid $medium-gray;
+  padding:2px;
+  font-size: 3.5em;
+  width:1.25em !important;
+  height:1.25em;
   float:left;
+  margin-right: .2em;
   //border-radius:50%;
 }
 
 .testiquote p {
-  &:first-letter() {
-    font-size: 3.7666em;
-    font-family: $body-font-family;
-    display: inline-block;
-    //font-weight: $global-weight-bold;
-    float:left;
-    line-height: 1;
-    margin-right: .0875em;
-    margin-top: -.1666em;
-    //font-variant: small-caps;
-  }
+  @include clearfix();
+  margin-bottom: 2em;
+  min-height: 8em;
 }
 
 .testiquote cite {

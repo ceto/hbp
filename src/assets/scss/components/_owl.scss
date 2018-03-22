@@ -22,13 +22,13 @@ $nav-disabled-opacity:  0.5 !default;
 
 $dot-width:       10px !default;
 $dot-height:      10px !default;
-$dot-rounded:     30px !default;
-$dot-margin:      5px 7px !default;
-$dot-background:    $color-gray !default;
-$dot-background-active: $color-base !default;
+$dot-rounded:     0 !default;
+$dot-margin:      5px 3px !default;
+$dot-background:    $medium-gray !default;
+$dot-background-active: $dark-gray !default;
 
 
-.owl-theme {
+.owl-testi {
   // Styling Next and Prev buttons
   .owl-nav {
     margin-top: 10px;
@@ -93,9 +93,7 @@ $dot-background-active: $color-base !default;
 }
 
 
-.hbpslider {
 
-}
 
 .hbpslider, .hbpslider .owl-stage {
   overflow: hidden;
@@ -111,12 +109,19 @@ $dot-background-active: $color-base !default;
   }
 }
 
+.hbpslider {
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(#000,.25);
+
+}
+
 .hbpslider__img {
   height:12rem;
   width:auto !important;
   max-width: none;
       max-height: 40rem;
   display: block;
+
   @include breakpoint(tablet) {
     height:20rem;
   }
@@ -149,7 +154,8 @@ $dot-background-active: $color-base !default;
   }
 }
 
-.owl-slider {
+.owl-slider.owl-carousel {
+
   .owl-nav {
     margin:0;
     position: absolute;
@@ -159,14 +165,21 @@ $dot-background-active: $color-base !default;
     //background-color: blue;
     //transform: translateY(-50%);
     [class*=owl-] {
-      height:1.5rem;
-      width:1.5rem;
-      font-size: 1.5rem;
+      height:1.75rem;
+      width:1.75rem;
+      font-size: 2.5rem;
+      font-weight: $global-weight-bold;
       padding:0;
-      background-color: $warning-color;
-      color:$white;
-      line-height: 1.333rem;
+      background-color: $white;
+      box-shadow: 0 0 3px 0 rgba(#000,.35);
+      color:$primary-color;
+      line-height: 1.75rem;
       text-align: center;
+      margin-left: 1px;
+      &:hover {
+        background-color: $primary-color;
+        color:$white;
+      }
     }
   }
 }

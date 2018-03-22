@@ -1,3 +1,7 @@
+img {
+  image-rendering: -webkit-optimize-contrast;
+
+}
 .csection {
   //border-top: 1px solid scale-color($light-gray, $lightness: -5%);
 }
@@ -111,8 +115,6 @@
   background-color: $light-gray;
   border-color: scale-color($light-gray, $lightness:-5%);
 }
-
-
 
 .ps--accent {
   background-color: $warning-color;

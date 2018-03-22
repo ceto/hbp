@@ -78,7 +78,14 @@
         margin:.5em 0;
     }
 }
-
+.stylized--light {
+    //font-size: 1.75rem;
+    color:$dark-gray;
+    text-align: center;
+    &:after {
+        margin:1em auto 1em;
+    }
+}
 .bulletpoints {
     font-size:  $global-font-size * 1.2;
     margin-left: 5%;

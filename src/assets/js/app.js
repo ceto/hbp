@@ -53,7 +53,7 @@ $(document).ready(function(){
       loop:true,
       nav: true,
       navText: ['‹', '›'],
-      navContainer: '#slidernav',
+      //navContainer: '#slidernav',
       dots: false,
       responsive:{
         0:{
