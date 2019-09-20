@@ -1,6 +1,16 @@
+@import 'banner';
 @import 'hero';
+@import 'masthead';
 @import 'owl';
 @import 'testiquote';
+@import 'figaro';
+
+
+.superlinea {
+    &.small {
+        max-width: 25%;
+    }
+}
 
 .callout--accent {
     background-color: $primary-color;
