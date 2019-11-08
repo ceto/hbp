@@ -48,14 +48,23 @@ $(document).ready(function() {
   $(".owl-tourlist").owlCarousel({
     loop: false,
     dots: true,
+    arrows: true,
     responsive: {
       0: {
         items: 1,
         margin: 20
       },
-      640: {
+      480: {
         items: 2,
-        margin: 60
+        margin: 30
+      },
+      768: {
+        items: 3,
+        margin: 30
+      },
+      1200: {
+        items: 4,
+        margin: 30
       }
     }
   });

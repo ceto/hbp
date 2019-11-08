@@ -1,36 +1,39 @@
 ---
 pagetitle: Ottoman era in the Buda Castle - 3 hours walking tour
 title: Ottoman era in the Buda Castle
-lead: Discover the medieval Old Town of Buda
-heroimg: https://source.unsplash.com/1920x640/?budapest,castle
+subtitle: Discover the medieval Old Town of Buda
+lead: Three hours walking tour, Buda Castle, Royal Palace, Fisthermen’s Bastion, Matthias Church, Downtown of Pest, Inner City Parish Church
+callouttitle: Private tour in the heart of Budapest
+not: ottoman
+
 ---
 {{>header}}
 <section id="masthead" data-magellan-target="masthead" class="masthead masthead--postprod">
-  <div class="masthead__content">
-    <div class="grid-container">
-      <div class="masthead__titlewrap">
-        <h1 class="masthead__title">Ottoman era in the Buda Castle</h1>
+    <div class="masthead__content">
+        <div class="grid-container">
+          <div class="masthead__titlewrap">
+            <h1 class="masthead__title">{{ title }}</h1>
+          </div>
+          <h2 class="masthead__subtitle">{{ subtitle }}</h2>
+          <div><hr class="superlinea" /></div>
+          <p class="masthead__lead">
+            {{ lead }}
+        </p>
+        </div>
       </div>
-      <h2 class="masthead__subtitle">Discover the medieval Old Town of Buda</h2>
-      <div><hr class="superlinea" /></div>
-      <p class="masthead__lead">
-        Three hours walking tour: Buda Castle, Royal Palace, Fisthermen’s Bastion, Matthias Church, Downtown of Pest, Inner City Parish Church
-      </p>
-    </div>
-  </div>
-  <figure class="masthead__fig">
-    <img width="1920" height="922" src="{{ heroimg }}" alt="{{ title }}" />
-  </figure>
-  <div class="masthead__bottomcontainer">
-                                <div class="grid-container text-center">
-                                    <p class="masthead__bottom"><em>Your Tour is</em><br />Under Construction</p>
-                                </div>
-                            </div>
+      <figure class="masthead__fig">
+        <img src="{{ root }}assets/img/tours/{{not}}/hero.jpg" alt="{{ pagetitle }}" />
+      </figure>
+        <div class="masthead__bottomcontainer">
+            <div class="grid-container text-center">
+                <p class="masthead__bottom"><em>Your Tour is</em><br />Under Construction</p>
+            </div>
+        </div>
   <div class="masthead__calloutcontainer">
     <div class="grid-container">
       <div class="masthead__callout">
         <header class="masthead__callout__head">
-          <h4 class="callout__title">Private tour in the heart of Budapest</h4>
+          <h4 class="callout__title">{{ callouttitle }}</h4>
           <hr class="superlinea small light" />
           <p>
             <small>Reservation is available</small><br />
@@ -75,21 +78,7 @@ heroimg: https://source.unsplash.com/1920x640/?budapest,castle
     </div>
   </div>
 </section>
-<div class="grid-container">
-  <div class="figaro">
-    <figure>
-      <img src="https://source.unsplash.com/500x500/?budapest,castle" alt=""" />
-    </figure>
-    <figure>
-      <img src="https://source.unsplash.com/500x500/?castle" alt="" />
-    </figure>
-    <figure><img src="https://source.unsplash.com/1000x500/?castle,budapest" alt="" /></figure>
-    <figure><img src="https://source.unsplash.com/1500x500/?budapest,castle" alt="" /></figure>
-    <figure>
-      <img src="https://source.unsplash.com/500x500/?budapest,castle" alt="" />
-    </figure>
-  </div>
-</div>
+{{>figaro}}
 
 <section id="details" class="ps" data-magellan-target="details">
   <div class="grid-container">
@@ -135,9 +124,6 @@ heroimg: https://source.unsplash.com/1920x640/?budapest,castle
     </div>
   </div>
 </section>
-{{> gallery}}
-
-{{> testimonials}}
 
 {{> contact}}
 
