@@ -10309,14 +10309,23 @@ __webpack_require__(4);
   (0, _jquery2.default)(".owl-tourlist").owlCarousel({
     loop: false,
     dots: true,
+    arrows: true,
     responsive: {
       0: {
         items: 1,
         margin: 20
       },
-      640: {
+      480: {
         items: 2,
-        margin: 60
+        margin: 30
+      },
+      768: {
+        items: 3,
+        margin: 30
+      },
+      1200: {
+        items: 4,
+        margin: 30
       }
     }
   });
