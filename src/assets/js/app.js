@@ -49,6 +49,8 @@ $(document).ready(function() {
     loop: false,
     dots: true,
     arrows: true,
+    nav: true,
+    navText: ["‹", "›"],
     responsive: {
       0: {
         items: 1,

@@ -1,0 +1,22 @@
+.tabs {
+  &.large {
+    background-color: transparent;
+    .tabs-title > a {
+      font-size: 1.25rem;
+    }
+
+    .tabs-title > a:focus,
+    .tabs-title > a[aria-selected="true"] {
+      background-color: $body-background;
+    }
+  }
+}
+
+.tabs-content {
+  &.full {
+    background-color: transparent;
+    .tabs-panel {
+      padding: 2rem 0;
+    }
+  }
+}

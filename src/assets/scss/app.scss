@@ -1,10 +1,9 @@
-
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css?family=Judson:400,400i,700|Quando');
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
-@import 'owl.carousel';
+@import url("https://fonts.googleapis.com/css?family=Judson:400,400i,700|Quando");
+@import "settings";
+@import "foundation";
+@import "motion-ui";
+@import "owl.carousel";
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -54,5 +53,6 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'layouts/layouts';
-@import 'components/components';
+@import "extends";
+@import "layouts/layouts";
+@import "components/components";

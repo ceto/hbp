@@ -1,39 +1,48 @@
 .tc {
-    //background-color: $primary-color;
-    //border:1px solid $white;
-    //box-shadow: 0 0 0 6px $primary-color;
-    //color:$white;
-    // background-image: url(../img/arabesc.svg);
-    // background-repeat: repeat;
-    // background-size: 3.5rem auto;
-    // background-position: left top;
-    //max-width: 32rem;
-    background-color: $white;
-    //box-shadow: 0 0 .25rem 0 rgba(#000,.5);
-    padding:1rem;
+  //background-color: $primary-color;
+  //border:1px solid $white;
+  //box-shadow: 0 0 0 6px $primary-color;
+  //color:$white;
+  // background-image: url(../img/arabesc.svg);
+  // background-repeat: repeat;
+  // background-size: 3.5rem auto;
+  // background-position: left top;
+  //max-width: 32rem;
+  background-color: $white;
+  //box-shadow: 0 0 .25rem 0 rgba(#000,.5);
+  padding: 1rem 1rem 3rem;
+  min-height: 20rem;
+  position: relative;
+
+  .button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
 }
 .tc__fig {
-    margin:-1rem -1rem -1.125rem -1rem;
+  margin: -1rem -1rem -1.125rem -1rem;
 }
 .tc__title {
-    font-size: 1.25rem;
-    font-weight: $global-weight-normal;
-    margin: 0 0;
-    box-decoration-break: clone;
-    background-color: $primary-color;
-    color: $white;
-    display: inline;
-    line-height: 1.5;
-    padding-left:.333em;
-    padding-right:.333em;
-    padding-top:.1333em;
-    padding-bottom:.1333em;
+  font-size: 1.25rem;
+  font-weight: $global-weight-normal;
+  margin: 0 0;
+  box-decoration-break: clone;
+  background-color: $primary-color;
+  color: $white;
+  display: inline;
+  line-height: 1.5;
+  padding-left: 0.333em;
+  padding-right: 0.333em;
+  padding-top: 0.1333em;
+  padding-bottom: 0.1333em;
 
-    a {
-        color:inherit;
-    }
+  a {
+    color: inherit;
+  }
 }
 .tc__subtitle {
-    font-size: 1.125rem;
-    margin-top:.875rem;
+  font-size: 1.125rem;
+  margin-top: 0.875rem;
 }
