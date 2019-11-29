@@ -20,3 +20,12 @@
     }
   }
 }
+.dropdown.menu > li > a {
+  background-color: transparent;
+}
+li.menu-item.accent {
+  > a {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
