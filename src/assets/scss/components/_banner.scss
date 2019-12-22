@@ -11,7 +11,11 @@
   }
 
   .page-has-light-banner & {
-    background-image: linear-gradient(-180deg, rgba(#000, 0.25) 0, rgba(#000, 0) 100%);
+    background-image: linear-gradient(
+      -180deg,
+      rgba(#000, 0.25) 0,
+      rgba(#000, 0) 100%
+    );
     color: #fff;
     text-shadow: 0 0 1.5rem rgba(#000, 0.25);
   }
@@ -68,10 +72,8 @@
 }
 
 .brand__fulllogo {
-  width: 12rem;
+  width: 8rem;
 }
 
-
 .banner__contact {
-
 }
